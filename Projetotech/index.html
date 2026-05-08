@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra eventos gratuitos em Brasília 2026. Cultura, educação, esportes e entretenimento para todos!">
+    <meta name="keywords" content="eventos gratuitos, Brasília, 2026, atividades, cultura">
+    <meta name="author" content="Adriano Veloso">
+    <title>Eventos Gratuitos de Brasília 2026</title>
+    
+    <style>
+        /* ===== RESET E VARIÁVEIS ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Paleta UDF - Azuis e tons institucionais */
+            --primary-blue: #003D82;
+            --secondary-blue: #0055B8;
+            --light-blue: #E8F0FF;
+            --accent-blue: #00A8E8;
+            --text-dark: #1A1A1A;
+            --text-light: #5A5A5A;
+            --bg-light: #F5F7FA;
+            --white: #FFFFFF;
+            --border-color: #D4D4D8;
+            --success-color: #00A86B;
+            --warning-color: #FFA500;
+            --danger-color: #E31E24;
+            
+            /* Tipografia */
+            --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-size-xs: 0.75rem;
+            --font-size-sm: 0.875rem;
+            --font-size-base: 1rem;
+            --font-size-lg: 1.125rem;
+            --font-size-xl: 1.5rem;
+            --font-size-2xl: 2rem;
+            --font-size-3xl: 2.5rem;
+            
+            /* Espaçamento */
+            --spacing-xs: 0.25rem;
+            --spacing-sm: 0.5rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 1.5rem;
+            --spacing-xl: 2rem;
+            --spacing-2xl: 3rem;
+            
+            /* Sombras */
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+            --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.2);
+            
+            /* Transições */
+            --transition: all 0.3s ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        /* ===== TIPOGRAFIA ===== */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--primary-blue);
+        }
+
+        h1 {
+            font-size: var(--font-size-3xl);
+        }
+
+        h2 {
+            font-size: var(--font-size-2xl);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        h3 {
+            font-size: var(--font-size-xl);
+            margin-bottom: var(--spacing-md);
+        }
+
+        p {
+            color: var(--text-light);
+            margin-bottom: var(--spacing-md);
+        }
+
+        a {
+            color: var(--secondary-blue);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--accent-blue);
+            text-decoration: underline;
+        }
+
+        /* ===== CONTAINERS ===== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        .section {
+            padding: var(--spacing-2xl) 0;
+        }
+
+        .section--alt {
+            background-color: var(--white);
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: var(--white);
+            padding: var(--spacing-lg) 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-md);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: var(--spacing-lg);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--accent-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-lg);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: var(--spacing-xl);
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--white);
+            font-weight: 500;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            text-decoration: none;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 6px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--white);
+            border-radius: 3px;
+            transition: var(--transition);
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 50%, var(--accent-blue) 100%);
+            color: var(--white);
+            padding: var(--spacing-2xl) var(--spacing-md);
+            text-align: center;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content h1 {
+            color: var(--white);
+            font-size: var(--font-size-3xl);
+            margin-bottom: var(--spacing-lg);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-content p {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: var(--font-size-lg);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: var(--spacing-md) var(--spacing-xl);
+            background-color: var(--accent-blue);
+            color: var(--white);
+            border: none;
+            border-radius: 8px;
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cta-button:hover {
+            background-color: #00A8E8;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+            text-decoration: none;
+        }
+
+        /* ===== SEARCH SECTION ===== */
+        .search-section {
+            background-color: var(--white);
+            padding: var(--spacing-2xl) var(--spacing-md);
+            margin-top: -60px;
+            position: relative;
+            z-index: 100;
+        }
+
+        .search-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: var(--spacing-md);
+            padding: var(--spacing-lg);
+            background-color: var(--bg-light);
+            border-radius: 8px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .search-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .search-group label {
+            font-weight: 600;
+            color: var(--primary-blue);
+            margin-bottom: var(--spacing-sm);
+            font-size: var(--font-size-sm);
+        }
+
+        .search-group input,
+        .search-group select {
+            padding: var(--spacing-md);
+            border: 2px solid var(--border-color);
+            border-radius: 6px;
+            font-family: var(--font-primary);
+            font-size: var(--font-size-base);
+            transition: var(--transition);
+        }
+
+        .search-group input:focus,
+        .search-group select:focus {
+            outline: none;
+            border-color: var(--secondary-blue);
+            background-color: var(--light-blue);
+        }
+
+        .search-button {
+            align-self: flex-end;
+            padding: var(--spacing-md) var(--spacing-xl);
+            background-color: var(--secondary-blue);
+            color: var(--white);
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: var(--spacing-md);
+        }
+
+        .search-button:hover {
+            background-color: var(--primary-blue);
+        }
+
+        /* ===== EVENTS GRID ===== */
+        .events-section {
+            background-color: var(--bg-light);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            font-size: var(--font-size-lg);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .event-card {
+            background-color: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .event-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .event-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--light-blue) 0%, rgba(0, 88, 184, 0.1) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+        }
+
+        .event-content {
+            padding: var(--spacing-lg);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .event-category {
+            display: inline-block;
+            background-color: var(--light-blue);
+            color: var(--primary-blue);
+            padding: var(--spacing-xs) var(--spacing-md);
+            border-radius: 20px;
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+            width: fit-content;
+        }
+
+        .event-content h3 {
+            color: var(--primary-blue);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .event-details {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-lg);
+            flex-grow: 1;
+        }
+
+        .event-detail {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            color: var(--text-light);
+            font-size: var(--font-size-sm);
+        }
+
+        .detail-icon {
+            color: var(--secondary-blue);
+            font-weight: 700;
+            min-width: 24px;
+        }
+
+        .event-footer {
+            display: flex;
+            gap: var(--spacing-md);
+            padding-top: var(--spacing-lg);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .btn-small {
+            flex: 1;
+            padding: var(--spacing-md);
+            border: 2px solid var(--secondary-blue);
+            background-color: transparent;
+            color: var(--secondary-blue);
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: var(--font-size-sm);
+        }
+
+        .btn-small:hover {
+            background-color: var(--secondary-blue);
+            color: var(--white);
+        }
+
+        .btn-small.filled {
+            background-color: var(--secondary-blue);
+            color: var(--white);
+        }
+
+        .btn-small.filled:hover {
+            background-color: var(--primary-blue);
+        }
+
+        /* ===== CATEGORIES SECTION ===== */
+        .categories-section {
+            background-color: var(--white);
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .category-card {
+            background: linear-gradient(135deg, var(--light-blue) 0%, rgba(0, 168, 232, 0.1) 100%);
+            padding: var(--spacing-xl);
+            border-radius: 12px;
+            text-align: center;
+            transition: var(--transition);
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .category-card:hover {
+            border-color: var(--secondary-blue);
+            transform: scale(1.05);
+        }
+
+        .category-icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .category-card h4 {
+            color: var(--primary-blue);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .category-card p {
+            font-size: var(--font-size-sm);
+            color: var(--text-light);
+        }
+
+        /* ===== STATS SECTION ===== */
+        .stats-section {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: var(--white);
+            padding: var(--spacing-2xl) var(--spacing-md);
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-2xl);
+            margin-top: var(--spacing-2xl);
+        }
+
+        .stat-item h3 {
+            color: var(--white);
+            font-size: var(--font-size-2xl);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .stat-item p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* ===== NEWSLETTER SECTION ===== */
+        .newsletter-section {
+            background-color: var(--bg-light);
+            padding: var(--spacing-2xl) var(--spacing-md);
+            text-align: center;
+        }
+
+        .newsletter-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .newsletter-content h2 {
+            color: var(--primary-blue);
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-xl);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            min-width: 250px;
+            padding: var(--spacing-md);
+            border: 2px solid var(--border-color);
+            border-radius: 6px;
+            font-family: var(--font-primary);
+            font-size: var(--font-size-base);
+        }
+
+        .newsletter-form input:focus {
+            outline: none;
+            border-color: var(--secondary-blue);
+        }
+
+        .newsletter-form button {
+            padding: var(--spacing-md) var(--spacing-xl);
+            background-color: var(--secondary-blue);
+            color: var(--white);
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .newsletter-form button:hover {
+            background-color: var(--primary-blue);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: var(--spacing-2xl) var(--spacing-md) var(--spacing-lg);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-2xl);
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .footer-section h4 {
+            color: var(--white);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: var(--transition);
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--accent-blue);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: var(--spacing-lg);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: var(--font-size-sm);
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: var(--font-size-2xl);
+            }
+
+            h2 {
+                font-size: var(--font-size-xl);
+            }
+
+            .header-content {
+                flex-direction: row;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--primary-blue);
+                padding: var(--spacing-lg);
+            }
+
+            nav.active {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: var(--spacing-md);
+                align-items: flex-start;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: var(--font-size-2xl);
+            }
+
+            .hero-content p {
+                font-size: var(--font-size-base);
+            }
+
+            .hero {
+                min-height: 350px;
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+
+            .search-container {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
+            }
+
+            .search-button {
+                align-self: stretch;
+            }
+
+            .events-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
+            }
+
+            .categories-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-lg);
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .newsletter-form input,
+            .newsletter-form button {
+                width: 100%;
+            }
+
+            .section {
+                padding: var(--spacing-xl) 0;
+            }
+
+            .logo {
+                font-size: var(--font-size-lg);
+            }
+
+            .logo-icon {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            :root {
+                --font-size-3xl: 1.75rem;
+                --font-size-2xl: 1.5rem;
+                --font-size-xl: 1.25rem;
+                --spacing-2xl: 1.5rem;
+            }
+
+            .container {
+                padding: 0 var(--spacing-md);
+            }
+
+            .hero-content h1 {
+                font-size: var(--font-size-2xl);
+            }
+
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-lg);
+            }
+
+            .section {
+                padding: var(--spacing-lg) 0;
+            }
+
+            .search-section {
+                margin-top: -40px;
+            }
+        }
+
+        /* ===== UTILITIES ===== */
+        .hidden {
+            display: none !important;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-white {
+            color: var(--white);
+        }
+
+        .bg-light {
+            background-color: var(--light-blue);
+        }
+
+        .mt-lg {
+            margin-top: var(--spacing-lg);
+        }
+
+        .mb-lg {
+            margin-bottom: var(--spacing-lg);
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🎉</div>
+                    <span>EventosBSB</span>
+                </div>
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#categorias">Categorias</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Descubra Eventos Gratuitos em Brasília</h1>
+            <p>Encontre as melhores atividades culturais, educacionais e recreativas gratuitas em 2026</p>
+            <button class="cta-button" onclick="document.getElementById('buscar').scrollIntoView({ behavior: 'smooth' })">
+                Explorar Eventos
+            </button>
+        </div>
+    </section>
+
+    <!-- ===== SEARCH SECTION ===== -->
+    <section class="search-section" id="buscar">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-group">
+                    <label for="data">Data</label>
+                    <input type="date" id="data" placeholder="Selecione uma data">
+                </div>
+                <div class="search-group">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria">
+                        <option value="">Todas as categorias</option>
+                        <option value="cultura">🎭 Artes e Cultura</option>
+                        <option value="educacao">🎓 Educação e Workshops</option>
+                        <option value="esportes">🏃 Esportes e Lazer</option>
+                        <option value="musica">🎵 Música e Entretenimento</option>
+                        <option value="literatura">📚 Literatura e Leitura</option>
+                        <option value="sustentabilidade">🌱 Sustentabilidade</option>
+                        <option value="comunidade">🤝 Eventos Comunitários</option>
+                        <option value="artesanato">🎨 Artesanato e DIY</option>
+                    </select>
+                </div>
+                <div class="search-group">
+                    <label for="local">Local</label>
+                    <input type="text" id="local" placeholder="Bairro ou região">
+                </div>
+            </div>
+            <div class="container" style="text-align: right;">
+                <button class="search-button" onclick="buscarEventos()">Buscar Eventos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EVENTS SECTION ===== -->
+    <section class="events-section section" id="eventos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Eventos em Destaque</h2>
+                <p>Confira os melhores eventos gratuitos acontecendo em Brasília em 2026</p>
+            </div>
+
+            <div class="events-grid" id="eventos-grid">
+                <!-- Event Card 1 -->
+                <article class="event-card">
+                    <div class="event-image">🎭</div>
+                    <div class="event-content">
+                        <span class="event-category">Artes e Cultura</span>
+                        <h3>Festival de Teatro Brasiliense</h3>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <span class="detail-icon">📅</span>
+                                <span>15 a 20 de Maio</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="detail-icon">📍</span>
+                                <span>Centro de Brasília</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="detail-icon">⏰</span>
+                                <span>19h00 - 22h00</span>
+                            </div>
+                        </div>
+                        <div class="event-footer">
+                            <button class="btn-small">Detalhes</button>
+                            <button class="btn-small filled">Interessado</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event Card 2 -->
+                <article class="event-card">
+                    <div class="event-image">🎓</div>
+                    <div class="event-content">
+                        <span class="event-category">Educação</span>
+                        <h3>Workshop de Programação Web</h3>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <span class="detail-icon">📅</span>
+                                <span>22 de Maio</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="detail-icon">📍</span>
+                                <span>Biblioteca Central</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="detail-icon">⏰</span>
+                                <span>14h00 - 17h00</span>
+                            </div>
+                        </div>
+                        <div class="event-footer">
+                            <button class="btn-small">Detalhes</button>
+                            <button class="btn-small filled">Interessado</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event Card 3 -->
+                <article class="event-card">
+                    <div class="event-image">🎵</div>
+                    <div class="event-content">
+                        <span class="event-category">Música</span>
+                        <h3>Apresentação de Música ao Vivo</h3>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <span class="detail-icon">📅</span>
+                                <span>25 de Maio</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="detail-icon">📍</span>
+                                <span>Parque da Cidade</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="detail-icon">⏰</span>
+                                <span>18h00 - 21h00</span>
+                            </div>
+                        </div>
+                        <div class="event-footer">
+                            <button class="btn-small">Detalhes</button>
+                            <button class="btn-small filled">Interessado</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event Card 4 -->
+                <article class="event-card">
+                    <div class="event-image">🏃</div>
+                    <div class="event-content">
+                        <span class="event-category">Esportes</span>
+                        <h3>Corrida Pela Saúde</h3>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <span class="detail-icon">📅</span>
+                                <span>30 de Maio</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="detail-icon">📍</span>
+                                <span>Lago Paranoá</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="detail-icon">⏰</span>
+                                <span>06h00 - 09h00</span>
+                            </div>
+                        </div>
+                        <div class="event-footer">
+                            <button class="btn-small">Detalhes</button>
+                            <button class="btn-small filled">Interessado</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event Card 5 -->
+                <article class="event-card">
+                    <div class="event-image">📚</div>
+                    <div class="event-content">
+                        <span class="event-category">Literatura</span>
+                        <h3>Sarau de Poesia Contemporânea</h3>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <span class="detail-icon">📅</span>
+                                <span>10 de Junho</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="detail-icon">📍</span>
+                                <span>Livraria Brasiliense</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="detail-icon">⏰</span>
+                                <span>19h00 - 21h00</span>
+                            </div>
+                        </div>
+                        <div class="event-footer">
+                            <button class="btn-small">Detalhes</button>
+                            <button class="btn-small filled">Interessado</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event Card 6 -->
+                <article class="event-card">
+                    <div class="event-image">🌱</div>
+                    <div class="event-content">
+                        <span class="event-category">Sustentabilidade</span>
+                        <h3>Plantio Comunitário de Árvores</h3>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <span class="detail-icon">📅</span>
+                                <span>15 de Junho</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="detail-icon">📍</span>
+                                <span>Parque Ecológico</span>
+                            </div>
+                            <div class="event-detail">
+                                <span class="detail-icon">⏰</span>
+                                <span>07h00 - 12h00</span>
+                            </div>
+                        </div>
+                        <div class="event-footer">
+                            <button class="btn-small">Detalhes</button>
+                            <button class="btn-small filled">Interessado</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CATEGORIES SECTION ===== -->
+    <section class="categories-section section--alt section" id="categorias">
+        <div class="container">
+            <div class="section-header">
+                <h2>Categorias de Eventos</h2>
+                <p>Explore todos os tipos de eventos disponíveis em Brasília</p>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">🎭</div>
+                    <h4>Artes e Cultura</h4>
+                    <p>Teatro, cinema, exposições e apresentações artísticas</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎓</div>
+                    <h4>Educação</h4>
+                    <p>Workshops, cursos, palestras e seminários</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎵</div>
+                    <h4>Música</h4>
+                    <p>Apresentações musicais, festivais e shows ao vivo</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🏃</div>
+                    <h4>Esportes</h4>
+                    <p>Corridas, yoga, dança e atividades recreativas</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">📚</div>
+                    <h4>Literatura</h4>
+                    <p>Lançamentos de livros, saraus e rodas de leitura</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🌱</div>
+                    <h4>Sustentabilidade</h4>
+                    <p>Ações ambientais, aulas e conscientização</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🤝</div>
+                    <h4>Comunidade</h4>
+                    <p>Encontros comunitários e ações sociais</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h4>Artesanato</h4>
+                    <p>Oficinas de artesanato, DIY e criatividade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATS SECTION ===== -->
+    <section class="stats-section section">
+        <div class="container">
+            <h2>Números que Falam</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Eventos cadastrados em 2026</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50.000+</h3>
+                    <p>Usuários cadastrados</p>
+                </div>
+                <div class="stat-item">
+                    <h3>120+</h3>
+                    <p>Organizadores parceiros</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Eventos Gratuitos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER SECTION ===== -->
+    <section class="newsletter-section" id="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Receba Novidades</h2>
+                <p>Inscreva-se em nossa newsletter e receba as melhores dicas de eventos gratuitos em Brasília na sua caixa de entrada</p>
+                <form class="newsletter-form" onsubmit="inscreverNewsletter(event)">
+                    <input type="email" placeholder="seu@email.com" required>
+                    <button type="submit">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EventosBSB</h4>
+                    <p>Sua plataforma de eventos gratuitos em Brasília. Descobrindo oportunidades, conectando comunidades.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook" aria-label="Facebook">f</a>
+                        <a href="#" title="Instagram" aria-label="Instagram">📸</a>
+                        <a href="#" title="Twitter" aria-label="Twitter">𝕏</a>
+                        <a href="#" title="LinkedIn" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#categorias">Categorias</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Denúncias</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>📧 contato@eventosbsb.com</li>
+                        <li>📞 (61) 3333-3333</li>
+                        <li>📍 Brasília, DF</li>
+                        <li>Atendimento: Seg-Sex 09h-18h</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 EventosBSB. Todos os direitos reservados. Desenvolvido com ❤️ em Brasília.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // Menu mobile responsivo
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.getElementById('navbar');
+
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                navbar.classList.remove('active');
+            });
+        });
+
+        // Função de busca
+        function buscarEventos() {
+            const data = document.getElementById('data').value;
+            const categoria = document.getElementById('categoria').value;
+            const local = document.getElementById('local').value;
+            
+            alert(`Buscando eventos:\nData: ${data || 'Todas'}\nCategoria: ${categoria || 'Todas'}\nLocal: ${local || 'Todos'}`);
+            console.log('Busca realizada:', { data, categoria, local });
+        }
+
+        // Função de inscrição newsletter
+        function inscreverNewsletter(event) {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            alert(`✅ Inscrição realizada com sucesso!\nEmail: ${email}`);
+            event.target.reset();
+        }
+
+        // Adicionar efeitos aos cards ao scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.6s ease-out';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.event-card, .category-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Adicionar animação CSS
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
