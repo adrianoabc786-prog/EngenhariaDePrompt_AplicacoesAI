@@ -79,6 +79,9 @@ Professor(a): Kadidja Valéria
 
 ## 🚀 Próximos Passos
 
-- Melhorias sugeridas para o protótipo.
+- Um botão "Gerar Insights" que usa a IA para ler o histórico de medidas e escrever um pequeno parágrafo motivacional ou técnico para o paciente (ex: "Notamos que sua massa magra aumentou enquanto o IMC estabilizou, o que indica uma excelente recomposição corporal").
+- Criar uma linha de tendência (Trendline) que mostre, com base na velocidade atual de perda/ganho de peso, em quanto tempo o paciente atingirá a meta estabelecida (Peso Ideal). Isso aumenta drasticamente a adesão do paciente ao tratamento.
+- Implementar uma lógica que compare o IMC atual com o histórico. Se houver uma perda ou ganho de peso superior a 5% em menos de 30 dias, o sistema gera um alerta visual de "Atenção: Mudança Brusca Detectada", auxiliando o profissional a identificar possíveis patologias ou falhas na dieta precocemente.
 
-- Possíveis evoluções para o Projeto Final da Unidade 3.
+- O app passaria a exibir um gráfico comparativo de "Massa Gorda vs. Massa Magra". Se o IMC do paciente subir, mas o percentual de gordura descer, o sistema emite um alerta positivo: "Evolução Detectada: Ganho de massa muscular com redução de adiposidade".
+- Se o sistema detectar que o paciente não registra um novo peso há mais de 30 dias, ele envia automaticamente um e-mail ou notificação personalizada: "Olá, ex:(Adriano), notamos que faz um mês desde sua última medição. Vamos conferir seu progresso hoje?". Isso automatiza o pós-venda do nutricionista.
